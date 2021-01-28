@@ -1,0 +1,41 @@
+type Mutation {
+  login (
+    credentials: Credentials!
+  ): Tokens
+}
+
+
+type Mutation {
+  refreshToken (
+    refreshToken: RefreshToken!
+  ): AccessToken
+}
+
+
+type Mutation {
+  register (
+    credentials: Credentials!
+  ): Tokens
+}
+
+
+
+
+input RefreshToken {
+  refresh_token : String!
+}
+
+input Credentials {
+  username : String!
+  password : String!
+}
+
+type Tokens {
+  access_token : String!
+  refresh_token : String!
+}
+
+type AccessToken {
+  access_token : String!
+}
+

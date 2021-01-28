@@ -1,0 +1,29 @@
+actions:
+- name: login
+  definition:
+    kind: synchronous
+    handler: '{{ACTION_BASE_URL}}/login'
+  permissions:
+  - role: anonymous
+- name: refreshToken
+  definition:
+    kind: synchronous
+    handler: '{{ACTION_BASE_URL}}/refresh'
+  permissions:
+  - role: anonymous
+  - role: user
+- name: register
+  definition:
+    kind: synchronous
+    handler: '{{ACTION_BASE_URL}}/register'
+  permissions:
+  - role: anonymous
+custom_types:
+  enums: []
+  input_objects:
+  - name: RefreshToken
+  - name: Credentials
+  objects:
+  - name: Tokens
+  - name: AccessToken
+  scalars: []

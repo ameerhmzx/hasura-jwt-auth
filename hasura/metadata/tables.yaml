@@ -1,0 +1,17 @@
+- table:
+    schema: auth
+    name: role
+- table:
+    schema: auth
+    name: user
+  array_relationships:
+  - name: user_roles
+    using:
+      foreign_key_constraint_on:
+        column: user_id
+        table:
+          schema: auth
+          name: user_role
+- table:
+    schema: auth
+    name: user_role
