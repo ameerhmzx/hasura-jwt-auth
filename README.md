@@ -2,7 +2,7 @@
 Golang authentication server sample for hasura.
 
 ## Requirements
-- Golang, docker, docker-compose & hasura-cli installed
+Docker, docker-compose & hasura-cli installed
 
 ## Instructions
 - update `.env` & `hasura/config.yaml` file
