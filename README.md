@@ -6,6 +6,7 @@ Docker, docker-compose & hasura-cli installed
 
 ## Instructions
 - update `.env` & `hasura/config.yaml` file
+- remove `db/.gitignore` as postgres container requires empty directory
 - execute `docker-compose up`
 - apply migrations `hasura migration apply`
 - apply seeds `hasura seeds apply`
