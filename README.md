@@ -1,6 +1,9 @@
 # Hasura JWT Authentication
 Golang authentication server sample for hasura.
 
+> This repository is a demonstration of Hasura authentication using JWT Authentication.
+> It is definately not production grade and is not advised to be used for serious projects.
+
 ## Requirements
 Docker, docker-compose & hasura-cli installed
 
